@@ -12,10 +12,7 @@ $lobsterFont: 'Lobster', cursive;
 $navBarBg: #20262d;
 $navBarFg: #bbc;
 
-
-// @include max-screen(1024px) { ... }
-// @include max-screen(768px)  { ... }
-// @include max-screen(640px)  { ... }
+$infoBoxBg: #f3f6f3;
 
 
 body {
@@ -48,19 +45,10 @@ body {
   }
 }
 
-#map_canvas {
-  display: block;
-  height: 400px;
-  @include max-screen(768px)  { height: 250px; }
-  @include max-screen(480px)  { height: 150px; }
-}
 
 #subnavbar { margin-top: 40px; }
 
 header {
-  // position: relative;
-  // margin-left: -20px;
-  // margin-right: -20px;
   padding: 100px 0 60px 0;
   background: url(/images/sjblue2.jpg) no-repeat top left ;
   background-size: cover;
@@ -78,20 +66,20 @@ header {
   }
 }
 
+h2 { 
+  margin: 50px 0 20px 0; font-size: 2em;  
+    @include text-shadow(rgba(black, 0.05) 1px 1px 0, rgba(black, 0.05) 2px 2px 0, rgba(black, 0.05) 1px 1px 0); 
+}
 
-h2 { margin: 40px 0 20px 0; font-size: 2em; }
 
 
 #subheader {
   margin-top: -2px;
-  // position: relative;
-  // margin-left: -20px;
-  // margin-right: -20px;
-  // left: 0;
-  // right: 0;
   height: 30px;
   background: lighten($navBarBg, 5%);
 }
+
+
 
 
 
@@ -115,14 +103,21 @@ h2 { margin: 40px 0 20px 0; font-size: 2em; }
     // @include background( linear-gradient(#e99, #b66)); 
   }
 
-  table, th, td { border-width: 0; background-color: #fff0f0; }
+  table, th, td { border-width: 0; background-color: $infoBoxBg; }
   td > a {  }
   td { 
     height: 10em; width: 140px;  
-    a { 
+    a.SessionSummary { 
       display: block; line-height: 1.5em;
       font-weight: bold; color: #46b; 
       margin-bottom: 5px;
+    }
+    a.SpeakerBio { 
+      color: black;
+      text-decoration: none;
+    }
+    a.SpeakerBio:hover { 
+      text-decoration: underline;
     }
     a.tweet { display: inline; line-height: 20px; }
 
@@ -145,6 +140,12 @@ h2 { margin: 40px 0 20px 0; font-size: 2em; }
   filter: alpha(opacity=100);
 }
 
+#map_canvas {
+  display: block;
+  height: 400px;
+  @include max-screen(768px)  { height: 250px; }
+  @include max-screen(480px)  { height: 150px; }
+}
 
 
 .directionsToEvent {
