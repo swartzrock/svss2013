@@ -128,10 +128,12 @@ h2 {
 .tooltip-inner {
   font-size: 1.1em;
   padding: 20px 40px; 
-  background: #556;
+  background: #456;
   text-align: left;
   max-width: 350px;
-  line-height: 20px;
+  line-height: 1.5em;
+  @include max-screen(768px)  { font-size: 1em; padding: 10px 20px; }
+  @include max-screen(480px)  { font-size: .9em; padding: 5px 10px; }  
 }
 
 .tooltip.in {
