@@ -211,59 +211,66 @@ h2 {
   /* line 128, ../sass/main.scss */
   .tooltip-inner {
     font-size: .9em;
-    padding: 5px 10px;
+    padding: 2px 5px;
+  }
+}
+@media screen and (max-width: 320px) {
+  /* line 128, ../sass/main.scss */
+  .tooltip-inner {
+    font-size: .8em;
+    max-width: 300px;
   }
 }
 
-/* line 139, ../sass/main.scss */
+/* line 140, ../sass/main.scss */
 .tooltip.in {
   opacity: 1;
   filter: alpha(opacity=100);
 }
 
-/* line 144, ../sass/main.scss */
+/* line 145, ../sass/main.scss */
 #map_canvas {
   display: block;
   height: 400px;
 }
 @media screen and (max-width: 768px) {
-  /* line 144, ../sass/main.scss */
+  /* line 145, ../sass/main.scss */
   #map_canvas {
     height: 250px;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 144, ../sass/main.scss */
+  /* line 145, ../sass/main.scss */
   #map_canvas {
     height: 150px;
   }
 }
 
-/* line 152, ../sass/main.scss */
+/* line 153, ../sass/main.scss */
 .directionsToEvent {
   height: 300px;
 }
 
-/* line 157, ../sass/main.scss */
+/* line 158, ../sass/main.scss */
 .footer {
   padding: 80px 0 100px 0;
   background: #20262d;
   text-align: center;
   font-size: 1.2em;
 }
-/* line 163, ../sass/main.scss */
+/* line 164, ../sass/main.scss */
 .footer .contactInfo {
   font-weight: 600;
   color: white;
   margin-bottom: 40px;
 }
-/* line 164, ../sass/main.scss */
+/* line 165, ../sass/main.scss */
 .footer .siteInfo {
   font-weight: normal;
   color: #bbbbcc;
   margin-bottom: 30px;
 }
-/* line 165, ../sass/main.scss */
+/* line 166, ../sass/main.scss */
 .footer .siteCredits {
   font-weight: normal;
   color: #668;

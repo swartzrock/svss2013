@@ -133,7 +133,8 @@ h2 {
   max-width: 350px;
   line-height: 1.5em;
   @include max-screen(768px)  { font-size: 1em; padding: 10px 20px; }
-  @include max-screen(480px)  { font-size: .9em; padding: 5px 10px; }  
+  @include max-screen(480px)  { font-size: .9em; padding: 2px 5px; }  
+  @include max-screen(320px)  { font-size: .8em; max-width: 300px; }
 }
 
 .tooltip.in {
