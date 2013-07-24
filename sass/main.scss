@@ -7,7 +7,6 @@ $experimental-support-for-svg: true;
 
 
 $openSansFont: 'Open Sans', sans-serif;
-$lobsterFont: 'Lobster', cursive;
 
 $navBarBg: #20262d;
 $navBarFg: #bbc;
@@ -129,10 +128,13 @@ h2 {
 .tooltip-inner {
   font-size: 1.1em;
   padding: 20px 40px; 
-  background: #556;
+  background: #456;
   text-align: left;
   max-width: 350px;
-  line-height: 20px;
+  line-height: 1.5em;
+  @include max-screen(768px)  { font-size: 1em; padding: 10px 20px; }
+  @include max-screen(480px)  { font-size: .9em; padding: 2px 5px; }  
+  @include max-screen(320px)  { font-size: .8em; max-width: 300px; }
 }
 
 .tooltip.in {
