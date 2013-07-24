@@ -28,6 +28,11 @@ google.maps.event.addDomListener(window, 'load', initialize);
 $(document).ready(function () {
   var tooltipSettings = {animation: false, placement: 'bottom' };
   $('.scheduleContents td a').tooltip( tooltipSettings );
+  $('.scheduleContents td a').click(function(){$(this).tooltip('hide')});
+
+  var noclick = function(e) { e.preventDefault(); }
+  $('.scheduleContents td a.SessionSummary').click(noclick);
+  $('.scheduleContents td a.SpeakerBio').click(noclick);
 });
 
 
