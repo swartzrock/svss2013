@@ -1,0 +1,19 @@
+SPEAKER SCREEN-CAPTURE INSTRUCTIONS
+
+There will be a video recording of each track and the keynote.  We'll ask you for a copy of your slides.  However, since many folks will be live-coding, it is essential that we get a screen capture to align the recordings.
+
+Mac users already have QuickTime and will only need to start and stop the screen capture as described in
+
+http://osxdaily.com/2010/11/16/screen-recorder-mac/
+
+Windows users will need to download Camtasia trial and use that.  There is a trial version of Camtasia for windows or Mac.  Watch the videos to quickly learn how to use it.  On Mac you can just use QuickTime. 
+
+1. Mac Quicktime screen recording
+http://etc.usf.edu/techease/4all/getting-started/creating-screen-recordings-with-quicktime-player/
+2. Kazam
+https://launchpad.net/kazam
+3. Windows or Mac Camtasia, Trial version, watch videos 
+http://www.techsmith.com/camtasia.html
+
+
+Start the recording right before beginning the talk and stop it after Q&A.  We'll direct you to a volunteer with an external bus-powered drive who will collect the recordings.  In case we don't get it from you for any reason, please email them to me later.  There will be volunteers in the rooms to help you with the process.
